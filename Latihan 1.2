@@ -1,0 +1,27 @@
+# Harga beli awal
+harga_beli_awal = 650000  
+jumlah_emas_awal = 25  
+
+modal_awal = harga_beli_awal * jumlah_emas_awal  
+
+jumlah_emas_tambahan = 15
+harga_beli_tambahan = 685000
+
+modal_tambahan = jumlah_emas_tambahan * harga_beli_tambahan  
+
+modal_total = modal_awal + modal_tambahan  
+
+jumlah_emas_total = jumlah_emas_awal + jumlah_emas_tambahan  
+
+harga_baru = 715000  
+
+nilai_total_emas = jumlah_emas_total * harga_baru  
+
+keuntungan_total_rp = nilai_total_emas - modal_total  
+
+keuntungan_total_persen = (keuntungan_total_rp / modal_total) * 100  
+
+print("Total gram emas yang dimiliki:", jumlah_emas_total, "gram")
+print("Modal total yang dikeluarkan: Rp", modal_total)
+print("Keuntungan total dalam Rp:", keuntungan_total_rp)
+print("Keuntungan total dalam %:", round(keuntungan_total_persen, 2))  # Dibulatkan 2 desimal
